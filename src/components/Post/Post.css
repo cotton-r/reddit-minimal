@@ -1,0 +1,16 @@
+.Post {
+  width: 600px;
+  background-color: #121212;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Post img {
+  width: 500px;
+  height: auto;
+  align-self: center;
+}
