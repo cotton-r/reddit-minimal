@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 import SearchBar from './components/SearchBar/SearchBar';
 import PostsContainer from './components/PostsContainer/PostsContainer';
-import Subreddits from './components/Subreddits/Subreddits';
+import Subreddits from './components/Subreddits/Subreddits.js';
 
 import redditlogo from './redditlogo.png';
 
