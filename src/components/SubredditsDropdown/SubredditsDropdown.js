@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './SubredditsDropdown.css';
-import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { addSubreddit, changeActiveSubreddit } from '../Subreddits/SubredditsSlice';
+import { changeActiveSubreddit } from '../Subreddits/SubredditsSlice';
 
 export const SubredditsDropdown = (props) => {
   const dispatch = useDispatch();
