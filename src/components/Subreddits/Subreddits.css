@@ -3,7 +3,7 @@
   width: 300px;
   left: 0px;
   margin-top: 71px;
-  background-color: #121212;
+  background-color: #191a1f;
   overflow-y: scroll;
   height: calc(100vh - 71px);
   overflow-x: hidden;
@@ -18,7 +18,7 @@
 }
 
 .subreddits ul li {
-  color: white;
+  color: rgb(255, 255, 255, .87);
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -27,12 +27,13 @@
   margin-left: -39px;
   height: 35px;
   padding: 4px;
-  background-color: #121212;
+  background-color: #191a1f;
 }
 
 .subreddits ul li:hover {
-  background-color: #3b3b3b;
-  transition: 0.1s
+  background-color: #252836;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 .subreddits ul {

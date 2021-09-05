@@ -29,7 +29,7 @@ function App() {
     <div className="App">
 
       <header className="header">
-        <h1 className="mainHeader">Reddit Minimal</h1>
+        <h1 className="mainHeader">reddit minimal</h1>
         <SearchBar className="searchBar"/>
       </header>
 

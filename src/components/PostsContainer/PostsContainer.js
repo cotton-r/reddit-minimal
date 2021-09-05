@@ -23,6 +23,8 @@ const PostsContainer = () => {
                     author={post.author}
                     postCreated={post.created_utc}
                     postComments={post.num_comments}
+                    subreddit={post.subreddit}
+                    PostName={post.name}
                 />
             ))}
         </div>

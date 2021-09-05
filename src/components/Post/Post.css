@@ -1,9 +1,10 @@
 .Post {
   width: 600px;
-  background-color: #121212;
-  color: #fff;
+  background-color: #25262c;
+  color: rgb(255, 255, 255, .87);
   border-radius: 5px;
-  padding: 15px;
+  padding-left: 17px;
+  padding-right: 17px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -13,4 +14,9 @@
   width: 500px;
   height: auto;
   align-self: center;
+}
+
+.PostUser {
+  font-size: 0.80rem;
+  color: rgb(255, 255, 255, .57);
 }
