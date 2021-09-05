@@ -1,6 +1,8 @@
 import React from 'react';
 import './Post.css';
 
+import { PostFooter } from '../PostFooter/PostFooter';
+
 const Post = (props) => {
 
     const dateCalculator = (created) => {
