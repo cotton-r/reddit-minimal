@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 import SearchBar from './components/SearchBar/SearchBar';
 import PostsContainer from './components/PostsContainer/PostsContainer';
-import Subreddits from './components/Subreddits/Subreddits.js';
+import Subreddits from './components/Subreddits/Subreddits';
 
 import redditlogo from './redditlogo.png';
 
@@ -32,9 +32,11 @@ function App() {
         <h1 className="mainHeader">reddit minimal</h1>
         <SearchBar className="searchBar"/>
       </header>
-
-      <Subreddits logo={redditlogo} />
-      <PostsContainer />
+      
+      <div className="mainWrapper">
+        <Subreddits logo={redditlogo} />
+        <PostsContainer />
+      </div>
 
     </div>
   )

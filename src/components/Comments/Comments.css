@@ -1,0 +1,27 @@
+.comment {
+  background-color: #25262c;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 5px 15px 5px 15px;
+  margin: 10px 0;
+  line-height: 1.5rem;
+  font-size: 0.96rem;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.isNotShown {
+  display: none;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentDate {
+  font-size: 0.85rem;
+  font-style: italic;
+}

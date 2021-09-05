@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 import { Comments } from '../Comments/Comments.js';
 
+import './PostFooter.css';
+
 export const dateCalculator = (created) => {
   const currentDate = Date.now();
   const postDate = new Date(created * 1000);
@@ -60,9 +62,7 @@ export const PostFooter = (props) => {
   return (
     <footer>
       <ul className='postInfos'>
-        <li><span>{props.postAuthor}</span></li>
-        <li>{dateCalculator(props.postCreated)}</li>
-        <li onClick={onCommentsClicked} className='commentsIcon'>{commentsIcon}<span>{props.postComments}</span></li>
+        <li onClick={onCommentsClicked} className='commentsIcon'>{commentsIcon}&nbsp;{props.postComments}</li>
       </ul>
       <Comments permalink={props.postPermalink}
         id={props.postId}

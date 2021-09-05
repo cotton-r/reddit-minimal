@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0;
+  color: rgb(255, 255, 255, .87);
 }
 
 .postInfos {
@@ -34,4 +35,8 @@
 
 .commentsIcon:hover {
   cursor: pointer;
+}
+
+.commentsNum {
+  color: rgb(255, 255, 255, .87);
 }

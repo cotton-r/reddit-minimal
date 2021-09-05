@@ -1,8 +1,7 @@
 .subreddits {
-  position: absolute;
   width: 300px;
   left: 0px;
-  margin-top: 71px;
+  margin-top: 0px;
   background-color: #191a1f;
   overflow-y: scroll;
   height: calc(100vh - 71px);
