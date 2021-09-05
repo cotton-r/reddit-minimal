@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import Post from '../Post/Post';
+import { SubredditsDropdown } from '../SubredditsDropdown/SubredditsDropdown';
 
 const PostsContainer = () => {
 
@@ -15,6 +16,7 @@ const PostsContainer = () => {
 
     return (
         <div className="PostsContainer">
+            <SubredditsDropdown />
             {postsArray.map(post => (
                 <Post 
                     title={post.title}
