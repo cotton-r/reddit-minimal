@@ -38,6 +38,13 @@ const Post = (props) => {
             <p>{props.text.substring(0, 600) + (props.text.length > 600 ? " [...]" : "")}</p>
             {props.text.length > 600 ? <p className="readMore">read more...</p> : null}
             <img src={props.imgSrc} alt={""} onError={(e) => e.target.style.display = "none"} />
+            <PostFooter postId={props.PostId}
+                postAuthor={props.author}
+                postCreated={props.postCreated}
+                postPermalink={props.PostPermalink}
+                postComments={props.postComments}
+                visible={false}
+            />
         </div>
     )
 }

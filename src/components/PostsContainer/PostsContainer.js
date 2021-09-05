@@ -25,6 +25,8 @@ const PostsContainer = () => {
                     postComments={post.num_comments}
                     subreddit={post.subreddit}
                     PostName={post.name}
+                    PostId={post.id}
+                    PostPermalink={post.permalink}
                 />
             ))}
         </div>
