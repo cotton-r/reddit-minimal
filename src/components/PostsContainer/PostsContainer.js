@@ -32,6 +32,9 @@ const PostsContainer = () => {
                     PostName={post.name}
                     PostId={post.id}
                     PostPermalink={post.permalink}
+                    media={post.media}
+                    domain={post.domain}
+                    url={post.url}
                 />
             ))}
         </div>
