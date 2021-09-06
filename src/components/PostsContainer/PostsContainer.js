@@ -10,14 +10,17 @@ import { SubredditsDropdown } from '../SubredditsDropdown/SubredditsDropdown';
 
 const PostsContainer = () => {
 
-    const postsArray = useSelector(state => state.posts)
+    const activeSearchInput = useSelector(state => state.search);
+    const postsArray = useSelector(state => state.posts);
+
     const dispatch = useDispatch();
-    console.log(postsArray);
+
+    const filteredPosts = postsArray.filter(post => post.title.toLowerCase().includes(activeSearchInput.toLowerCase()));
 
     return (
         <div className="PostsContainer">
             <SubredditsDropdown />
-            {postsArray.map(post => (
+            {filteredPosts.map(post => (
                 <Post 
                     title={post.title}
                     text={post.selftext}
