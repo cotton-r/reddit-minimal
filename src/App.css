@@ -15,13 +15,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .mainHeader {
-  position: absolute;
-  left: 10px;
+  position: relative;
+  margin-left: 50px;
   color: rgb(255, 255, 255, .87);
+}
+
+.searchBar {
+  margin-left: 60px;
 }
 
 .mainWrapper {
@@ -30,4 +35,25 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    min-height: 130px;
+    justify-content: baseline;
+    padding-left: 15%;
+  }
+
+  .searchBar {
+    margin-top: -0px;
+    min-width: 80%;
+    margin-left: 0px;
+  }
+
+  .mainHeader {
+    margin-bottom: -15px;
+    margin-top: 0px;
+    min-width: 80%;
+    margin-left: 0px;
+  }
 }

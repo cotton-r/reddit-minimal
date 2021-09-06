@@ -1,0 +1,23 @@
+.searchbardiv {
+  width: 100%;
+}
+
+.searchBar {
+  width: 25vw;
+  padding: 9px;
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 374px) {
+  .searchBar {
+    min-width: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .searchBar {
+    min-width: 200px;
+    width: 200px;
+  }
+}
