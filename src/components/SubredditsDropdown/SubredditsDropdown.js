@@ -28,7 +28,7 @@ export const SubredditsDropdown = (props) => {
   };
 
   return (
-    <section className="subreddits">
+    <section className="subredditsdrop">
       {dropdown(subReddits)}
     </section>
   );
