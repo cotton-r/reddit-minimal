@@ -7,32 +7,22 @@ const SearchBar = () => {
     const dispatch = useDispatch();
 
     const searchBarValue = useSelector(state => state.search);
+    const activeSubSliced = useSelector(state => state.subreddits.activeSubreddit).slice(3, -1);
 
-    const searchTerm = '';
     const handleChange = (e) => {
-        searchTerm = e.target.value;
+        dispatch(changeActiveSearch(e.target.value));
     }
 
-    const handleSearch = () => {
-        dispatch(changeActiveSearch(searchTerm));
-        searchTerm = '';
-    }
 
 
     return (
         <div id='searchbar'>
-            <form className="searchForm" onSubmit={handleSearch}>
-                <input 
-                    type="search" 
-                    id="search_reddit"
-                    value={searchBarValue}
-                    name="search_reddit" 
-                    placeholder="Search Reddit" 
-                    onChange={handleChange} 
-                    required>
-                </input>
-                <button type="submit">Go</button>
-            </form>
+            <input className="searchBar"
+                id="Search"
+                value={searchBarValue}
+                placeholder={"Search posts in " + activeSubSliced}
+                onChange={handleChange}
+            />
         </div>
     )
 }
