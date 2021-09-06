@@ -12,6 +12,7 @@ import redditlogo from './redditlogo.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSubredditPosts } from './app/Reddit';
 import { changePosts } from './components/PostsContainer/PostsContainerSlice';
+import { changeActiveSubreddit } from './components/Subreddits/SubredditsSlice';
 
 
 
@@ -24,12 +25,21 @@ function App() {
   .then(response => {
     dispatch(changePosts(response));
   }), [activeSub]);
+  
+  const onTitleClicked = () => {
+    dispatch(changeActiveSubreddit("/r/Home/"));
+  }
 
   return (
     <div className="App">
 
       <header className="header">
-        <h1 className="mainHeader">reddit minimal</h1>
+        <h1 
+          className="mainHeader" 
+          onClick={onTitleClicked}
+        >
+          reddit <span>minimal</span>
+        </h1>
         <SearchBar className="searchBar"/>
       </header>
       

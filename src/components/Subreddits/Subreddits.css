@@ -30,7 +30,7 @@
 }
 
 .subreddits ul li:hover {
-  background-color: #252836;
+  background-color: #f54409;
   transition: 0.1s;
   cursor: pointer;
 }
