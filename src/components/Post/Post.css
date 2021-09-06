@@ -21,3 +21,7 @@
   font-size: 0.80rem;
   color: rgb(255, 255, 255, .57);
 }
+
+video {
+  max-height: 600px;
+}

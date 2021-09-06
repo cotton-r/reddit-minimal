@@ -33,6 +33,7 @@ const Post = (props) => {
     }
 
     let video = '';
+    let image = '';
 
     if (props.media) {
         if (props.media.reddit_video) {
@@ -44,6 +45,10 @@ const Post = (props) => {
         }
     }
 
+    if (props.url.match(/.png|.jpg|.jpeg|v.redd/)) {
+        image = <img src={props.url} alt="" onError={(e) => e.target.style.display = "none"} />
+    }
+
     return (
         <div className="Post">
             <p className="PostUser">
@@ -51,7 +56,8 @@ const Post = (props) => {
             </p>
             <h2>{props.title}</h2>
             <p>{props.text}</p>
-            <img src={props.imgSrc} alt={""} onError={(e) => e.target.style.display = "none"} />
+            {image ? image : null}
+            {video ? video : null}
             <PostFooter postId={props.PostId}
                 postAuthor={props.author}
                 postCreated={props.postCreated}
