@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { getSubreddits } from '../../app/Reddit';
 import { addSubreddit, changeActiveSubreddit } from './SubredditsSlice';
+import { changeActiveSearch } from '../SearchBar/SearchBarSlice';
 
 const Subreddits = (props) => {
     const activeSub = useSelector(state => state.subreddits.activeSubreddit);
@@ -29,7 +30,10 @@ const Subreddits = (props) => {
                 {subReddits.map(item => (
 
                         <li 
-                            onClick={() => dispatch(changeActiveSubreddit(item.url))}
+                            onClick={() => {
+                                dispatch(changeActiveSubreddit(item.url));
+                                dispatch(changeActiveSearch(''));
+                            }}
                             className={activeSub === item.url ? "activeSubreddit" : undefined}
                         >
                             <img src={item.icon} alt={""} onError={(e) => e.target.src = props.logo} />
