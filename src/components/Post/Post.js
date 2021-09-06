@@ -1,5 +1,6 @@
 import React from 'react';
 import './Post.css';
+import ReactPlayer from 'react-player';
 
 import { PostFooter } from '../PostFooter/PostFooter';
 
@@ -28,6 +29,18 @@ const Post = (props) => {
             return Math.round(dateDifferenceInMinutes) + " minutes ago";
         } else {
             return "less than a minute ago";
+        }
+    }
+
+    let video = '';
+
+    if (props.media) {
+        if (props.media.reddit_video) {
+            video = <video controls width="100%"><source src={props.media.reddit_video.fallback_url} /></video>
+        } else if (props.domain.match(/yout/)) {
+            video = <ReactPlayer url={props.url} controls width="100%" />
+        } else if (props.domain.match(/vimeo/)) {
+            video = <ReactPlayer url={props.url} controls width="100%" />
         }
     }
 
