@@ -6,6 +6,8 @@
   align-items: center;
   padding: 0;
   color: rgb(255, 255, 255, .87);
+  border-top: 1px solid #353535;
+  padding-top: 16px;
 }
 
 .postInfos {

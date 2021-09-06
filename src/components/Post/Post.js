@@ -37,8 +37,7 @@ const Post = (props) => {
                 <strong>r/{props.subreddit}</strong> - posted by u/{props.author} - {dateCalculator(props.postCreated)}
             </p>
             <h2>{props.title}</h2>
-            <p>{props.text.substring(0, 600) + (props.text.length > 600 ? " [...]" : "")}</p>
-            {props.text.length > 600 ? <p className="readMore">read more...</p> : null}
+            <p>{props.text}</p>
             <img src={props.imgSrc} alt={""} onError={(e) => e.target.style.display = "none"} />
             <PostFooter postId={props.PostId}
                 postAuthor={props.author}
