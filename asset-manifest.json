@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reddit-minimal/static/css/main.97d35fd0.chunk.css",
+    "main.css": "/reddit-minimal/static/css/main.aadfd5af.chunk.css",
     "main.js": "/reddit-minimal/static/js/main.4f1b332d.chunk.js",
     "main.js.map": "/reddit-minimal/static/js/main.4f1b332d.chunk.js.map",
     "runtime-main.js": "/reddit-minimal/static/js/runtime-main.dd8a5265.js",
@@ -10,14 +10,14 @@
     "static/js/3.ed559a1f.chunk.js": "/reddit-minimal/static/js/3.ed559a1f.chunk.js",
     "static/js/3.ed559a1f.chunk.js.map": "/reddit-minimal/static/js/3.ed559a1f.chunk.js.map",
     "index.html": "/reddit-minimal/index.html",
-    "static/css/main.97d35fd0.chunk.css.map": "/reddit-minimal/static/css/main.97d35fd0.chunk.css.map",
+    "static/css/main.aadfd5af.chunk.css.map": "/reddit-minimal/static/css/main.aadfd5af.chunk.css.map",
     "static/js/2.312d03f2.chunk.js.LICENSE.txt": "/reddit-minimal/static/js/2.312d03f2.chunk.js.LICENSE.txt",
     "static/media/redditlogo.b31490f4.png": "/reddit-minimal/static/media/redditlogo.b31490f4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dd8a5265.js",
     "static/js/2.312d03f2.chunk.js",
-    "static/css/main.97d35fd0.chunk.css",
+    "static/css/main.aadfd5af.chunk.css",
     "static/js/main.4f1b332d.chunk.js"
   ]
 }
