@@ -1,8 +1,8 @@
 .PostsContainer {
-  display: flex;
+  display: flex !important;
   width: 100%;
   height: calc(100vh - 70px);
-  flex-direction: column;
+  flex-direction: column !important;
   align-items: center;
   overflow-y: scroll;
 };
