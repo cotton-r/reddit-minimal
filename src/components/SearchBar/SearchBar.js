@@ -22,7 +22,7 @@ const SearchBar = () => {
             <input className="searchBar"
                 id="Search"
                 value={searchBarValue}
-                placeholder={"Search posts in " + activeSubSliced}
+                placeholder={"Search postss in " + activeSubSliced}
                 onChange={handleChange}
             />
         </div>
