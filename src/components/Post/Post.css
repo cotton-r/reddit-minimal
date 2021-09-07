@@ -1,27 +1,27 @@
 .Post {
-  width: 80%;
-  background-color: #22232b;
-  color: rgb(255, 255, 255, .87);
-  border-radius: 5px;
-  padding-left: 17px;
-  padding-right: 17px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
+  width: 80% !important;
+  background-color: #22232b !important;
+  color: rgb(255, 255, 255, .87) !important;
+  border-radius: 5px !important;
+  padding-left: 17px !important;
+  padding-right: 17px !important;
+  margin-top: 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .Post img {
-  width: 100%;
-  height: auto;
-  align-self: center;
-  max-width: 900px;
+  width: 100% !important;
+  height: auto !important;
+  align-self: center !important;
+  max-width: 900px !important;
 }
 
 .PostUser {
-  font-size: 0.80rem;
-  color: rgb(255, 255, 255, .57);
+  font-size: 0.80rem !important;
+  color: rgb(255, 255, 255, .57) !important;
 }
 
 video {
-  max-height: 600px;
+  max-height: 600px !important;
 }
